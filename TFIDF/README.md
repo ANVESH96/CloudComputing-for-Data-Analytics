@@ -1,4 +1,4 @@
-Instruction to execute DocWordCount.java, TermFrequency.java, TFIDF.java & Search.java for the cantebury corpus and save results
+<h2>Instruction to execute DocWordCount.java, TermFrequency.java, TFIDF.java & Search.java for the cantebury corpus and save results</h2>
 
 Some common hadoop commands which would be useful :
 create a new directory : hadoop fs -mkdir /user/cloudera/directoryname
