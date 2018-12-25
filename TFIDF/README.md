@@ -1,36 +1,34 @@
 <h3>Instruction to execute DocWordCount.java, TermFrequency.java, TFIDF.java & Search.java for the cantebury corpus and save results</h3>
 
 <h4>Some common hadoop commands which would be useful :</h4>  
-create a new directory : hadoop fs -mkdir /user/cloudera/directoryname  
-Read the output : hadoop fs -cat /user/cloudera/directoryname/filename  
-Remove files : hadoop fs -rm /user/cloudera/filename  
-Remove Directory : hadoop fs -rm -r /user/cloudera/directoryname  
-Push the file into cloud : hadoop fs -put /home/cloudera/file   /user/cloudera/file  
-here "/home/cloudera/file " is local file path and "/user/cloudera/file" is path in the cloudstorage  
-Get the file from cloud : hadoop fs -get  /user/cloudera/file /home/cloudera/file   
-here "/home/cloudera/file " is local file path and "/user/cloudera/file" is path in the cloudstorage  
+create a new directory : hadoop fs -mkdir /user/cloudera/directoryname    
+Read the output : hadoop fs -cat /user/cloudera/directoryname/filename    
+Remove files : hadoop fs -rm /user/cloudera/filename    
+Remove Directory : hadoop fs -rm -r /user/cloudera/directoryname    
+Push the file into cloud : hadoop fs -put /home/cloudera/file   /user/cloudera/file    
+here "/home/cloudera/file " is local file path and "/user/cloudera/file" is path in the cloudstorage    
+Get the file from cloud : hadoop fs -get  /user/cloudera/file /home/cloudera/file     
+here "/home/cloudera/file " is local file path and "/user/cloudera/file" is path in the cloudstorage    
 
 
-<h5>Prefrred steps : </h5> 
-Host the Cantebury Corpus in the cloudera by using the command :hadoop fs -put /home/cloudera/CanteburyCorpus /user/cloudera/  
-The argument /home/cloudera/CanteburyCorpus  refers to the path where you store the Cantebury Corpus folder.  
+<h5>Prefrred steps : </h5>   
+Host the Cantebury Corpus in the cloudera by using the command :hadoop fs -put /home/cloudera/CanteburyCorpus /user/cloudera/    
+The argument /home/cloudera/CanteburyCorpus  refers to the path where you store the Cantebury Corpus folder.    
 
-DocWordCount.java : This program helps to get all the words and their respective counts in a given set of files.  
+DocWordCount.java : This program helps to get all the words and their respective counts in a given set of files.    
 
-<h4>Instructions to execute DocWordCount.java:</h4>  
-1. Create a JAR file and save it in local folder  
-2.Make sure you have the input folder in the cloud  
-3.Execute the following command : hadoop jar /home/cloudera/DocWordCount.jar WordCount /user/cloudera/CanteburyCorpus /user/cloudera/DocWordCount 
-4. Argument "/home/cloudera/DocWordCount.jar" refers to path of the jar file which is saved locally  
-5. "WordCount" is the class name of the DocWordCount.java file  
-6. "/user/cloudera/CanteburyCorpus" is the path of input folder which is stored in cloudera  
-7. "/user/cloudera/DocWordCount" is path where you store the output  
-8.Output folder in general have two files with the names _SUCCESS and part-r-00000. The file with name part-r-00000 has the words and their counts  
-9.Get the output file to localdisk using : hadoop fs -get /user/cloudera/DocWordCount /home/cloudera/DocWordCount.  
+<h4>Instructions to execute DocWordCount.java:</h4>      
+1. Create a JAR file and save it in local folder    
+2.Make sure you have the input folder in the cloud    
+3.Execute the following command : hadoop jar /home/cloudera/DocWordCount.jar WordCount /user/cloudera/CanteburyCorpus /user/cloudera/DocWordCount   
+4. Argument "/home/cloudera/DocWordCount.jar" refers to path of the jar file which is saved locally    
+5. "WordCount" is the class name of the DocWordCount.java file    
+6. "/user/cloudera/CanteburyCorpus" is the path of input folder which is stored in cloudera    
+7. "/user/cloudera/DocWordCount" is path where you store the output    
+8.Output folder in general have two files with the names _SUCCESS and part-r-00000. The file with name part-r-00000 has the words and their counts    
+9.Get the output file to localdisk using : hadoop fs -get /user/cloudera/DocWordCount /home/cloudera/DocWordCount.    
 
-
-
-TermFrequency.java : This program helps to get all the words and their respective term frequencies in the files they appeared.
+TermFrequency.java : This program helps to get all the words and their respective term frequencies in the files they appeared.  
 
 <h4>Instructions to execute TermFrequency.java:</h4>
 1. Create a JAR file and save it in local folder
