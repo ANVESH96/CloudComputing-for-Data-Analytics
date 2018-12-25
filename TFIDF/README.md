@@ -15,20 +15,20 @@ here "/home/cloudera/file " is local file path and "/user/cloudera/file" is path
 Host the Cantebury Corpus in the cloudera by using the command :hadoop fs -put /home/cloudera/CanteburyCorpus /user/cloudera/    
 The argument /home/cloudera/CanteburyCorpus  refers to the path where you store the Cantebury Corpus folder.    
 
-DocWordCount.java : This program helps to get all the words and their respective counts in a given set of files.    
+<h4>DocWordCount.java : This program helps to get all the words and their respective counts in a given set of files.</h4>    
 
 <h4>Instructions to execute DocWordCount.java:</h4>      
-1. Create a JAR file and save it in local folder    
-2.Make sure you have the input folder in the cloud    
-3.Execute the following command : hadoop jar /home/cloudera/DocWordCount.jar WordCount /user/cloudera/CanteburyCorpus /user/cloudera/DocWordCount   
-4. Argument "/home/cloudera/DocWordCount.jar" refers to path of the jar file which is saved locally    
-5. "WordCount" is the class name of the DocWordCount.java file    
-6. "/user/cloudera/CanteburyCorpus" is the path of input folder which is stored in cloudera    
-7. "/user/cloudera/DocWordCount" is path where you store the output    
-8.Output folder in general have two files with the names _SUCCESS and part-r-00000. The file with name part-r-00000 has the words and their counts    
-9.Get the output file to localdisk using : hadoop fs -get /user/cloudera/DocWordCount /home/cloudera/DocWordCount.    
+1. Create a JAR file and save it in local folder<br>    
+2.Make sure you have the input folder in the cloud<br>     
+3.Execute the following command : hadoop jar /home/cloudera/DocWordCount.jar WordCount /user/cloudera/CanteburyCorpus /user/cloudera/DocWordCount<br>    
+4. Argument "/home/cloudera/DocWordCount.jar" refers to path of the jar file which is saved locally<br>     
+5. "WordCount" is the class name of the DocWordCount.java file<br>     
+6. "/user/cloudera/CanteburyCorpus" is the path of input folder which is stored in cloudera<br>     
+7. "/user/cloudera/DocWordCount" is path where you store the output<br>     
+8.Output folder in general have two files with the names _SUCCESS and part-r-00000. The file with name part-r-00000 has the words and their counts<br>     
+9.Get the output file to localdisk using : hadoop fs -get /user/cloudera/DocWordCount /home/cloudera/DocWordCount.<br>     
 
-TermFrequency.java : This program helps to get all the words and their respective term frequencies in the files they appeared.  
+<h4>TermFrequency.java : This program helps to get all the words and their respective term frequencies in the files they appeared. </h4> 
 
 <h4>Instructions to execute TermFrequency.java:</h4>
 1. Create a JAR file and save it in local folder
