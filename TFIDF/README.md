@@ -1,9 +1,9 @@
 <h3>Instruction to execute DocWordCount.java, TermFrequency.java, TFIDF.java & Search.java for the cantebury corpus and save results</h3>
 
 <h4>Some common hadoop commands which would be useful :</h4>  
-Create a new directory :
+ Create a new directory :
 >hadoop fs -mkdir /user/cloudera/directoryname<br>     
-Read the output : 
+ Read the output : 
 >hadoop fs -cat /user/cloudera/directoryname/filename<br>     
 Remove files : 
 >hadoop fs -rm /user/cloudera/filename<br>     
@@ -14,7 +14,7 @@ Get the file from cloud : hadoop fs -get  /user/cloudera/file /home/cloudera/fil
 Here "/home/cloudera/file " is local file path and "/user/cloudera/file" is path in the cloudstorage <br>    
 
 
-<h5>Prefrred steps : </h5>   
+<h5>Preferred steps : </h5>   
 Host the Cantebury Corpus in the cloudera by using the command :hadoop fs -put /home/cloudera/CanteburyCorpus /user/cloudera/ <br>    
 The argument /home/cloudera/CanteburyCorpus  refers to the path where you store the Cantebury Corpus folder.<br>     
 
