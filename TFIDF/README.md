@@ -2,7 +2,7 @@
 
 <h4>Some common hadoop commands which would be useful :</h4>  
  Create a new directory :
->hadoop fs -mkdir /user/cloudera/directoryname<br>     
+hadoop fs -mkdir /user/cloudera/directoryname<br>     
  Read the output : 
 >hadoop fs -cat /user/cloudera/directoryname/filename<br>     
 Remove files : 
@@ -19,8 +19,8 @@ Host the Cantebury Corpus in the cloudera by using the command :hadoop fs -put /
 The argument /home/cloudera/CanteburyCorpus  refers to the path where you store the Cantebury Corpus folder.<br>     
 
 <h4>DocWordCount.java : This program helps to get all the words and their respective counts in a given set of files.</h4>    
+<h4>Instructions to execute DocWordCount.java:</h4>
 
-<h4>Instructions to execute DocWordCount.java:</h4>      
 1. Create a JAR file and save it in local folder<br>    
 2.Make sure you have the input folder in the cloud<br>     
 3.Execute the following command : hadoop jar /home/cloudera/DocWordCount.jar WordCount /user/cloudera/CanteburyCorpus /user/cloudera/DocWordCount<br>    
@@ -47,9 +47,9 @@ The argument /home/cloudera/CanteburyCorpus  refers to the path where you store 
 
 
 
-TFIDF.java : This program helps to get all the words and their respective TFIDF values in the files they appeared. This file has two mapreduce jobs where output from first mapreduce job is used as input for second mapreduce job.
+<h5>TFIDF.java : This program helps to get all the words and their respective TFIDF values in the files they appeared. This file has two mapreduce jobs where output from first mapreduce job is used as input for second mapreduce job.</h5>
 
-Instructions to execute TFIDF.java:
+<h4>Instructions to execute TFIDF.java:</h4>
 1. Create a JAR file and save it in local folder
 2.Make sure you have the input folder in the cloud.
 3. Execute the following command : hadoop jar /home/cloudera/TFIDF.jar TfIdf /user/cloudera/CanteburyCorpus /user/cloudera/Tfidf_temp /user/cloudera/Tfidf 8
@@ -65,10 +65,10 @@ Instructions to execute TFIDF.java:
 
 
 
-Search.java : This program helps to get all the files whith their corresponding TFIDF values for a given  search query
+<h5>Search.java : This program helps to get all the files whith their corresponding TFIDF values for a given  search query </h5>
 
-Instructions to execute Search.java:
-Part-1
+<h4>Instructions to execute Search.java:</h4>
+<h4>Part-1</h4>
 1. Create a JAR file and save it in local folder
 2.Make sure you have the input folder in the cloud.
 3. Execute the following command : hadoop jar /home/cloudera/Search.jar Search /user/cloudera/TFIDF/part-r-00000 /user/cloudera/Search "computer science"
@@ -81,7 +81,7 @@ Part-1
 10.Get the output file to localdisk using : hadoop fs -get /user/cloudera/Search /home/cloudera/Search.
 11. All the arguments the execution command are case sensitive. Spell check is suggestable before execution.
 
-Part-2 :You use a different search query compared to part 1
+<h4>Part-2 :You use a different search query compared to part 1</h4>
 1. Create a JAR file and save it in local folder
 2.Make sure you have the input folder in the cloud.
 3. Execute the following command : hadoop jar /home/cloudera/Search.jar Search /user/cloudera/TFIDF/part-r-00000 /user/cloudera/Search2 "data analysis"
