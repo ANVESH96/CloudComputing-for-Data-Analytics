@@ -20,10 +20,10 @@ The argument /home/cloudera/CanteburyCorpus  refers to the path where you store 
 
 <h4>DocWordCount.java : This program helps to get all the words and their respective counts in a given set of files.</h4>    
 <h4>Instructions to execute DocWordCount.java:</h4>
-
 1. Create a JAR file and save it in local folder<br>    
-2.Make sure you have the input folder in the cloud<br>     
-3.Execute the following command : hadoop jar /home/cloudera/DocWordCount.jar WordCount /user/cloudera/CanteburyCorpus /user/cloudera/DocWordCount<br>    
+2. Make sure you have the input folder in the cloud<br>     
+3. Execute the following command :<br> 
+>hadoop jar /home/cloudera/DocWordCount.jar WordCount /user/cloudera/CanteburyCorpus /user/cloudera/DocWordCount<br>    
 4. Argument "/home/cloudera/DocWordCount.jar" refers to path of the jar file which is saved locally<br>     
 5. "WordCount" is the class name of the DocWordCount.java file<br>     
 6. "/user/cloudera/CanteburyCorpus" is the path of input folder which is stored in cloudera<br>     
