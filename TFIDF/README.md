@@ -1,12 +1,12 @@
 <h3>Instruction to execute DocWordCount.java, TermFrequency.java, TFIDF.java & Search.java for the cantebury corpus and save results</h3>
 
 <h4>Some common hadoop commands which would be useful :</h4>  
-create a new directory :
-> hadoop fs -mkdir /user/cloudera/directoryname<br>     
+Create a new directory :
+>hadoop fs -mkdir /user/cloudera/directoryname<br>     
 Read the output : 
-> hadoop fs -cat /user/cloudera/directoryname/filename<br>     
+>hadoop fs -cat /user/cloudera/directoryname/filename<br>     
 Remove files : 
-> hadoop fs -rm /user/cloudera/filename<br>     
+>hadoop fs -rm /user/cloudera/filename<br>     
 Remove Directory : hadoop fs -rm -r /user/cloudera/directoryname<br>     
 Push the file into cloud : hadoop fs -put /home/cloudera/file   /user/cloudera/file<br>     
 Here "/home/cloudera/file " is local file path and "/user/cloudera/file" is path in the cloudstorage <br>    
