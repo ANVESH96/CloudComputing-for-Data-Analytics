@@ -5,13 +5,13 @@ Running on single node cluster: ( this method can be used to test the algorithm 
 
 1.Compute the jar for the file pagerank.java which has pagerank algorithm  
 2. Create a directory in cluster using command:  
-> hadoop fs -mkdir /user/cloudera/{directoryname}  
+ hadoop fs -mkdir /user/cloudera/{directoryname}  
 3.Insert the input file into the cluster using command:  
-> hadoop fs -put {file path in local directory} /user/cloudera/  
+ hadoop fs -put {file path in local directory} /user/cloudera/  
 4.Run the jar file using command :  
-> hadoop jar {filepath of jar in local machine} JAVA_CLASSNAME /user/cloudera/{inputfilename} /user/cloudera/{intermediate file name} /user/cloudera/output   
+ hadoop jar {filepath of jar in local machine} JAVA_CLASSNAME /user/cloudera/{inputfilename} /user/cloudera/{intermediate file name} /user/cloudera/output   
 5. After the output is generated you can get to the desried category using the command below:  
-> hadoop jar -get /user/cloudera/output {desired path in edge node}  
+ hadoop jar -get /user/cloudera/output {desired path in edge node}  
 6. The intermediate files are deleted to avoid space wastage.  
 
 
